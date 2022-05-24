@@ -7,6 +7,14 @@
     <title>POST</title>
 </head>
 <body>
+
+<?php 
+    $dbhost = "localhost";
+    $dbuser = "root";
+    $dbpass = null;
+    $db = "test";
+    $conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: ");
+?>
     <form method="POST">
         username:<input type="text" name="username" value=""/><br>
         password:<input type="password" name="password" value=""/><br>
